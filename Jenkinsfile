@@ -4,9 +4,9 @@ pipeline {
     stages {
         stage('Dev') {
             steps {
-                git 'https://github.com/toshallab/aws_codebuild_codedeploy_nodeJs_demo.git'
+                git 'https://github.com/shivshashyaM/jen.git'
                 echo "index.js file content "
-                sh 'cat index.js'
+                sh 'cat Jenkinsfile'
             }
         }
         stage ('build') {
@@ -14,5 +14,5 @@ pipeline {
             sh 'npm install'    
             }
         }
-    }
+  }
 }
