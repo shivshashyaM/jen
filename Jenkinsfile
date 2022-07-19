@@ -5,8 +5,8 @@ pipeline {
         stage('Dev') {
             steps {
                 git 'https://github.com/shivshashyaM/jen.git'
-                echo "Jenkinsfile file content "
-                sh 'cat Jenkinsfile'
+                echo "index.js file content "
+                sh 'cat file.txt'
             }
         }
         stage ('build') {
@@ -14,5 +14,5 @@ pipeline {
             sh 'npm install'    
             }
         }
-  }
-}
+    }
+
