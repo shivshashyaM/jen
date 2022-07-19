@@ -5,7 +5,7 @@ pipeline {
         stage('Dev') {
             steps {
                 git 'https://github.com/shivshashyaM/jen.git'
-                echo "index.js file content "
+                echo "index.js fdile content "
                 sh 'cat file.txt'
             }
         }
